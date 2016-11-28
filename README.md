@@ -72,3 +72,72 @@ From the command line, type any of the following to perform an action:
 `gulp styles` - Compile, prefix, combine media queries, and minify CSS files.
 
 `gulp` - Runs the following tasks at the same time: i18n, icons, scripts, styles, sprites.
+
+
+
+### Assets
+```
+assets/
+	|- images/						# Images
+	|
+	|- scripts/						# JavaScript files (all files are minified except those ending in *config.js)
+	|	|- concat/					# All files are concatenated to project.js
+	|	|- project.js 				# Our non-minified development JavaScript file
+	|	|- project-min.js 			# Our minified production JavaScript file
+	|
+	|- sass/
+	|	|
+	|	|– base/ 				 	       # Base elements
+	|	|   |– _accessibility.scss    # Accessibility
+	|	|   |– _clearing.scss         # Clearing elements
+	|	|   |– _objects-media.scss    # Formatting images, videos, etc.
+	|	|   ...                       # Etc.
+	|	|
+	|	|– components/  		 # Element items that are a combination of base items
+	|	|   |– _comments.scss  # Comments
+	|	|   |– _pagination.scss  # Pagination
+	|	|   ...                  # Etc.
+	|	|
+	|	|– foundation/  		 # Minimal elements pulled from Foundation 6
+	|	|   ...                  # Etc.
+	|	|
+	|	|
+	|	|– modules/ 			 # Sections and content blocks
+	|	|   |– _hero.scss      	  # Hero
+	|	|   |– _slider.scss      # Slider
+	|	|   ...                  # Etc.
+	|	|
+	|	|
+	|	|– plugins/ 			 # Plugin styles
+	|	|   |– _gravity-forms.scss      # Gravity Forms
+	|	|   ...                         # Etc.
+	|	|
+	|	|– settings/ 			 # Settings
+	|	|   |– _settings.scss    # Settings
+	|	|
+	|	|– structure/ 			  # Page structure & blocks
+	|	|   |– _header.scss      # Header
+	|	|   |– _footer.scss      # Footer
+	|	|   ...                  # Etc.
+	|	|
+	|	|– template/ 				 # Page specific styles
+	|	|   |– _front-page.scss  # Home specific styles
+	|	|   |– _page.scss        # Page specific styles
+	|	|   ...                  # Etc.
+	|	|
+	|	|– utilities/ 			  # Functions & Mixins
+	|	|   |– functions/        # Functions
+	|	|   |– mixins            # Mixins
+	|	|
+	|	|
+	|	|– style.scss              # Primary Sass file
+	| |
+	| |
+node_modules/					# Gulp plugins
+```
+## WordPress files
+Our starter theme follows the Codex Template Hierarchy as found on http://codex.wordpress.org/Template_Hierarchy.
+
+Site Front Page 		-	`front-page.php`
+
+
