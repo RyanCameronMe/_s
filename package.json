@@ -37,6 +37,10 @@
   "scripts": {
     "test": "echo \"No test specified\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamcanadian1973/_s.git"
+  },
   "keywords": [
     "theme"
   ],
