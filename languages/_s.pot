@@ -60,6 +60,30 @@ msgstr ""
 msgid "&copy; %1$s Company. All rights reserved."
 msgstr ""
 
+#: functions.php:67
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:68
+msgid "Optional Mobile Menu"
+msgstr ""
+
+#: functions.php:128
+msgid "Sidebar 1"
+msgstr ""
+
+#: functions.php:129
+msgid "Sidebar 2"
+msgstr ""
+
+#: functions.php:130
+msgid "Sidebar 3"
+msgstr ""
+
+#: functions.php:138
+msgid "Widget area for %s"
+msgstr ""
+
 #: lib/functions/template-tags.php:30
 msgctxt "post date"
 msgid "%s"
