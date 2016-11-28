@@ -1,0 +1,63 @@
+/*
+Site Header
+---------------------------------------------- */
+
+.site-header {
+	
+	background: $white;
+	position: relative;
+	z-index: 9;	
+	
+	.wrap {
+		position: relative;
+		
+		@media #{$medium-up} {
+      		text-align: center;
+		}
+	}
+	
+	.title-area {
+		display: inline-block;
+		position: relative;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		
+		
+		width: auto;
+		float: none;
+		
+		@media #{$large-up} {
+	  		position: relative;
+			margin-top: -32px;
+			padding-bottom: 16px;
+		}
+		
+	}
+	
+	
+	.site-title {
+		
+		
+		a {
+			display: block;	
+		}
+	}
+	
+	
+}
+
+
+
+
+/* Widget Area
+--------------------------------------------- */
+
+.header-widget-area {
+	word-wrap: break-word;
+	position: relative;
+	
+	.widget-title {
+		display: none;	
+	}
+	
+}

@@ -1,0 +1,68 @@
+
+// 1. Colors
+// ---------
+
+$black: #000; // default text
+$white: #FFF; 
+$grey:  #999;
+
+
+// 2. Global
+// ---------
+
+$global-font-size: 100%;
+$global-width: 1300px;
+$global-lineheight: 1.4;
+
+$global-margin: 24px;
+$global-padding: 10px;
+$global-weight-normal: normal;
+$global-weight-bold: 400;
+$global-radius: 0;
+$global-text-direction: ltr;
+
+
+// 3. Typography
+// ---------
+
+$paragraph-font-family: 'Open Sans', sans-serif;
+$paragraph-font-style: normal;
+$paragraph-font-weight: 400;
+$paragraph-font-size: 16px;
+$paragraph-line-height: 1.7;
+$paragraph-font-color: $black;
+$paragraph-margin-bottom: 24px;
+
+$heading-font-family: 'Open Sans', sans-serif;
+
+// We use these to style anchors
+$link-color: $black !default;
+$link-color-hover: $black !default;
+
+
+// 4. Breakpoints
+// --------------
+
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 980px,
+  xlarge: 1024px,
+  xxlarge: 1200px,
+  xxxlarge: 1440px
+);
+// must match $breakpoints
+$breakpoint-classes: (small medium large xlarge xxlarge xxxlarge);
+
+
+// 5. The Grid
+// -----------
+
+$grid-row-width: $global-width;
+$grid-column-count: 12; // usually 12
+$grid-column-gutter: (
+  small: 30px,
+  large: 40px
+);
+$grid-column-align-edge: true;
+$block-grid-max: 8;

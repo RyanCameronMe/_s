@@ -1,0 +1,29 @@
+//
+// Footer
+// --------------------------------------------------
+
+
+.footer-widgets {
+	
+	.widget-title {
+		display: none;	
+	}
+	
+	.menu {
+	
+		ul {
+			@include list-reset;	
+		}
+		
+	}
+	
+}
+
+.site-footer {
+	
+	p {
+		a {
+		
+		}
+	}
+}

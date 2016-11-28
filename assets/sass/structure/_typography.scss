@@ -1,0 +1,128 @@
+/*
+font-family: "proxima-nova",sans-serif;
+*/
+
+html {
+	font-size: 100%;	
+}
+
+/* Typography resets */
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+	font-family: $paragraph-font-family;
+	font-style: $paragraph-font-style;
+	font-weight: $paragraph-font-weight;
+	font-size: $paragraph-font-size;  
+	color: $paragraph-font-color;
+	-webkit-font-smoothing: antialiased;
+}
+
+hr {
+	height: 1px;
+	background: #cecece;
+	border: none;
+	margin-bottom: 22px;	
+}
+
+
+a {
+	text-decoration: none;
+}
+
+p.no-margin {
+	margin-bottom: 0!important;	
+}
+
+// Links
+a {
+	color: $link-color;
+ 	outline: none!important;	
+	
+	&:focus {
+		outline: none!important;	
+	}
+
+	&:visited {
+		color: $link-color;
+	} // &:visited
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $link-color-hover;
+	} // &:hover, &:focus, &:active
+} // a
+
+strong {
+	font-weight: 700;	
+}
+		
+/* Headings
+--------------------------------------------- */	
+		
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	
+	font-weight: 600;
+	
+	a {
+		color: $link-color;	
+	}
+	
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 1;
+	color: $grey;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+	
+	@media #{$large-up} {
+		font-size: 40px;
+	}
+}
+
+.entry-content {
+
+	a {
+		text-decoration: none;
+	}
+		
+	h2 {
+		font-size: 30px;
+		line-height: 1.2;
+		text-transform: uppercase;
+		font-weight: 300;
+		color: $grey;
+		margin-bottom: 24px;
+	}
+	
+	h3 {
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: $grey;
+		margin-bottom: 20px;
+	}
+	
+	h4 {
+		font-size: 16px;
+		line-height: 1.5;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: $grey;
+		margin-bottom: 20px;
+	}
+	
+}
