@@ -1,6 +1,7 @@
 node_modules/
 .idea/
-.sass-cache
+.sass-cache*
+/*.css
 *.sublime-project
 .htaccess
 compass_app_log.txt
