@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="site-container">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'thegardens' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 	
 	<div class="before-header">
 		<div class="column row">
