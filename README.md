@@ -99,15 +99,13 @@ assets/
 	|	|   ...                  # Etc.
 	|	|
 	|	|– foundation/  		 # Foundation 6
-	|	|   |– _settings.scss  # Settings (allows us to override default variables)
-	|	|   |– _app.scss      # Load
-	|	|
+	|	|   |– _settings.scss  # Default Settings (todo: remove)
+	|	|   |– _app.scss       # Load Foundation Components
 	|	|
 	|	|– modules/ 			 # Sections and content blocks
 	|	|   |– _hero.scss      	  # Hero
 	|	|   |– _slider.scss      # Slider
 	|	|   ...                  # Etc.
-	|	|
 	|	|
 	|	|– plugins/ 			 # Plugin styles
 	|	|   |– _gravity-forms.scss      # Gravity Forms
@@ -130,9 +128,7 @@ assets/
 	|	|   |– functions/        # Functions
 	|	|   |– mixins            # Mixins
 	|	|
-	|	|
 	|	|– style.scss              # Primary Sass file
-	| |
 	| |
 node_modules/					# Foundation for sites + gulp plugins
 	| |
