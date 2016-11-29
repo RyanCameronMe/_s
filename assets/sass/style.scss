@@ -14,11 +14,11 @@ _s is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc
 */
 
 
-// Settings
-@import "settings/settings"; 
+// Foundation Sites
+@import 'foundation/index';
 
-// Custom Foundation build
-@import 'foundation/foundation';
+// Settings (allows us to override Foundation global settings)
+@import "settings/settings"; 
 
 // Utilities
 @import "utilities/index";

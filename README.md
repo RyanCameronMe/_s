@@ -98,8 +98,9 @@ assets/
 	|	|   |– _pagination.scss  # Pagination
 	|	|   ...                  # Etc.
 	|	|
-	|	|– foundation/  		 # Minimal elements pulled from Foundation 6
-	|	|   ...                  # Etc.
+	|	|– foundation/  		 # Foundation 6
+	|	|   |– _settings.scss  # Settings (allows us to override default variables)
+	|	|   |– _app.scss      # Load
 	|	|
 	|	|
 	|	|– modules/ 			 # Sections and content blocks
@@ -133,7 +134,9 @@ assets/
 	|	|– style.scss              # Primary Sass file
 	| |
 	| |
-node_modules/					# Gulp plugins
+node_modules/					# Foundation for sites + gulp plugins
+	| |
+	| |-foundation-sites/
 ```
 ## WordPress files
 Our starter theme follows the Codex Template Hierarchy as found on http://codex.wordpress.org/Template_Hierarchy.

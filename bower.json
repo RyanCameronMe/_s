@@ -1,6 +1,6 @@
 {
   "name": "_s",
-  "description": "A theme boilerplate for WebDevStudios.",
+  "description": "A theme boilerplate based on Underscores from Automattic.",
   "version": "1.0.0",
   "keywords": [
     "css",
@@ -13,7 +13,7 @@
     "web",
     "wordpress"
   ],
-  "homepage": "http://webdevstudios.com",
+  "homepage": "http://underscores.com",
   "main": [
     "sass/style.scss",
     "style.css"
@@ -28,6 +28,6 @@
     "tests"
   ],
   "dependencies": {
-    "normalize-css": "latest"
+   
   }
 }

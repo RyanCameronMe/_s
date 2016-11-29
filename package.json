@@ -1,9 +1,11 @@
 {
   "name": "_s",
   "version": "1.0.0",
-  "description": "A theme boilerplate for Kyle Rumble.",
+  "description": "A theme boilerplate based on Underscores from Automattic.",
   "main": "Gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "foundation-sites": "^6.2.3"
+  },
   "devDependencies": {
     "autoprefixer": "latest",
     "babel-preset-es2015": "latest",

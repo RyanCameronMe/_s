@@ -1,16 +1,4 @@
-/*
-font-family: "proxima-nova",sans-serif;
-*/
-
-html {
-	font-size: 100%;	
-}
-
-/* Typography resets */
-div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
-  margin: 0;
-  padding: 0; 
-}
+// Typography
 
 body {
 	font-family: $paragraph-font-family;
@@ -39,7 +27,7 @@ p.no-margin {
 
 // Links
 a {
-	color: $link-color;
+	color: $anchor-color;
  	outline: none!important;	
 	
 	&:focus {
@@ -47,13 +35,13 @@ a {
 	}
 
 	&:visited {
-		color: $link-color;
+		color: $anchor-color;
 	} // &:visited
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: $link-color-hover;
+		color: $anchor-color-hover;
 	} // &:hover, &:focus, &:active
 } // a
 
@@ -70,59 +58,86 @@ h3,
 h4,
 h5,
 h6 {
-	
-	font-weight: 600;
-	
+	color: $header-color;
+	font-family: $header-font-family;
+	font-weight: 700;
+	margin-bottom: 19px;
+ 	
 	a {
-		color: $link-color;	
+		color: $anchor-color;	
 	}
 	
 }
 
-h1 {
-	font-size: 36px;
-	font-weight: 300;
-	line-height: 1;
-	color: $grey;
-	text-transform: uppercase;
-	margin-bottom: 24px;
-	
-	@media #{$large-up} {
-		font-size: 40px;
+
+// Heading sizes
+@each $size, $headers in $header-sizes {
+	@include breakpoint($size) {
+		@each $header, $font-size in $headers {
+			#{$header} {
+			  font-size: rem-calc($font-size);
+			}
+		}
 	}
+}
+
+// Heading Line Heights
+
+h1 {
+	line-height: (52/48); 
+}
+
+h2 {
+	line-height: (40/36); 
+  }
+
+h3 {
+	line-height: (36/32);
+}
+
+h4 {
+	line-height: (28/20); 
+}
+
+h5 {
+	line-height: (28/20);
+}
+
+h6 {
+	line-height: (28/20);
 }
 
 .entry-content {
 
 	a {
+		color: $anchor-color;
 		text-decoration: none;
+			
+		&:hover {
+			color: $anchor-color-hover;
+		}
 	}
+	
+	p, li {
+		line-height: $paragraph-line-height;
+		margin-bottom: $paragraph-margin-bottom;	
+	}
+	
+	ul:not([class]),
+	ol:not([class]) {
 		
-	h2 {
-		font-size: 30px;
-		line-height: 1.2;
-		text-transform: uppercase;
-		font-weight: 300;
-		color: $grey;
-		margin-bottom: 24px;
+		margin-left: 40px;
+		list-style-position: outside;
+		
+		li {
+			padding: 0 0 5px 0;
+			margin-bottom: 0;
+		}
 	}
 	
-	h3 {
-		font-size: 24px;
-		line-height: 1.2;
-		font-weight: 300;
-		text-transform: uppercase;
-		color: $grey;
-		margin-bottom: 20px;
-	}
-	
-	h4 {
-		font-size: 16px;
-		line-height: 1.5;
-		font-weight: 300;
-		text-transform: uppercase;
-		color: $grey;
-		margin-bottom: 20px;
+		
+	ol li {
+		list-style-type: decimal;
 	}
 	
 }
