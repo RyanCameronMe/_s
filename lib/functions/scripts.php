@@ -10,7 +10,7 @@ function load_scripts() {
 		wp_enqueue_script( 'wp-util' );
 						
 		// Child Theme JS
-		wp_enqueue_script( CHILD_THEME_NAME , CHILD_THEME_JS . '/project.js', 
+		wp_enqueue_script( THEME_NAME , THEME_JS . '/project.js', 
 				array(
 					'jquery', 
 					'wp-util'

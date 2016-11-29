@@ -17,7 +17,7 @@ function kr_load_google_fonts() {
 	$fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
 	
 	if( !empty( $font_families ) ) {
-		wp_enqueue_style( 'google-fonts', $fonts_url, array(), CHILD_THEME_VERSION );
+		wp_enqueue_style( 'google-fonts', $fonts_url, array(), THEME_VERSION );
 	}
 	
 	
@@ -36,7 +36,7 @@ function kr_load_local_fonts() {
 			);
 	
 	foreach( $fonts as $name => $src ) {
-		wp_enqueue_style( $name, $src, array(), CHILD_THEME_VERSION );
+		wp_enqueue_style( $name, $src, array(), THEME_VERSION );
 	}
 		
 }
