@@ -37,7 +37,7 @@ const paths = {
 	'php': [ './*.php', './**/*.php' ],
 	'sass': 'assets/sass/**/*.scss',
 	'concat_scripts': 'assets/scripts/concat/*.js',
-	'scripts': [ 'assets/scripts/*.js', '!assets/scripts/project.js', '!assets/scripts/*.min.js', '!assets/scripts/*config.js',
+	'scripts': [ 'assets/scripts/*.js', '!assets/scripts/*.min.js', '!assets/scripts/*config.js',
 	'sprites': 'assets/images/sprites/*.png'
 };
 
@@ -341,8 +341,8 @@ gulp.task( 'watch', function () {
 	// Run tasks when files change.
 	gulp.watch( paths.icons, [ 'icons' ] );
 	gulp.watch( paths.sass, [ 'styles' ] );
-	gulp.watch( paths.scripts, [ 'scripts' ] );
 	gulp.watch( paths.concat_scripts, [ 'scripts' ] );
+	gulp.watch( paths.scripts, [ 'scripts' ] );
 	gulp.watch( paths.sprites, [ 'sprites' ] );
 	gulp.watch( paths.php, [ 'markup' ] );
 } );
