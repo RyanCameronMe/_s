@@ -341,8 +341,8 @@ gulp.task( 'watch', function () {
 	// Run tasks when files change.
 	gulp.watch( paths.icons, [ 'icons' ] );
 	gulp.watch( paths.sass, [ 'styles' ] );
-	gulp.watch( paths.concat_scripts, [ 'scripts' ] );
 	gulp.watch( paths.scripts, [ 'scripts' ] );
+	gulp.watch( paths.concat_scripts, [ 'scripts' ] );
 	gulp.watch( paths.sprites, [ 'sprites' ] );
 	gulp.watch( paths.php, [ 'markup' ] );
 } );
