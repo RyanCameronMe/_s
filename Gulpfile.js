@@ -37,7 +37,7 @@ const paths = {
 	'php': [ './*.php', './**/*.php' ],
 	'sass': 'assets/sass/**/*.scss',
 	'concat_scripts': 'assets/scripts/concat/*.js',
-	'scripts': [ 'assets/scripts/*.js', '!assets/scripts/*.min.js', '!assets/scripts/*config.js',
+	'scripts': [ 'assets/scripts/*.js', '!assets/scripts/*.min.js', '!assets/scripts/project.js', '!assets/scripts/*config.js' ,'!assets/scripts/customizer.js' ],
 	'sprites': 'assets/images/sprites/*.png'
 };
 
